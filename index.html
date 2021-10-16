@@ -16,7 +16,7 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center" id="title">freeCodeCamp Survey Form</h1>
+        <h1 class="text-center" id="title">Microverse Survey Form</h1>
         <p class="text-center" id="description">
             Thank you for taking the time to help us improve the platform
         </p>
@@ -25,11 +25,11 @@
         <form  id="survey-form" class="col-md-12  ">
             <div class="form-group my-4">
                 <label class="mb-3" id="name-label" for="name">Name</label>
-                <input class="form-control" type="text" id="name" placeholder="Enter your name" />
+                <input class="form-control" required type="text" id="name" placeholder="Enter your name" />
             </div>
             <div class="form-group my-4">
                 <label class="mb-3" id="email-label" for="email">Email</label>
-                <input class="form-control" type="email" id="email" placeholder="Enter your email" />
+                <input class="form-control" required type="email" id="email" placeholder="Enter your email" />
             </div>
             <div class="form-group my-4">
                 <label class="mb-3" id="number-label" for="number">Age (optional)</label>
@@ -38,7 +38,7 @@
             </div>
             <div class="form-group my-4">
                 <label class="mb-3" for="dropdown">Which option best describes your current role?</label>
-                <select class="form-control" id="dropdown">
+                <select required class="form-control" id="dropdown">
                     <option disabled="" selected="" value="">
                         Select current role
                     </option>
@@ -49,14 +49,14 @@
                     <option value="other">Other</option>
                 </select>
             </div>
-            <p class="mb-0">Would you recommend freeCodeCamp to a friend?</p>
+            <p class="mb-0">Would you recommend Microverse to a friend?</p>
             <div class="form-check my-2">
-                <label class="form-check-label col-md-12 my-2" for="option-1"><input class="form-check-input" id="option-1" value="" type="radio"
+                <label class="form-check-label col-md-12 my-2" for="option-1"><input checked class="form-check-input" id="option-1" value="Definitely" type="radio"
                         name="recomandation" />Definitely</label>
-                <label class="form-check-label col-md-12 my-2" for="option-2"><input class="form-check-input" id="option-2" value="" type="radio"
+                <label class="form-check-label col-md-12 my-2" for="option-2"><input class="form-check-input" id="option-2" value="Maybe" type="radio"
                         name="recomandation" />
                     Maybe</label>
-                <label class="form-check-label col-md-12 my-2" for="option-3"><input class="form-check-input" id="option-3" value="" type="radio"
+                <label class="form-check-label col-md-12 my-2" for="option-3"><input class="form-check-input" id="option-3" value="Not sure" type="radio"
                         name="recomandation" />Not sure</label>
             </div>
             <p class="mb-0">What would you like to see improved? (Check all that apply)</p>
@@ -67,13 +67,26 @@
                         type="checkbox" />Back-end Projects</label>
                 <label class="form-check-label col-md-12 my-2" for="check-3"><input class="form-check-input" id="check-3" value="Data Visualization"
                         type="checkbox" />Data Visualization</label>
-                <label class="form-check-label col-md-12 my-2" for="check-4"><input class="form-check-input" id="check-4" value="Challenges"
-                        type="checkbox" />Challenges</label>
+                <label class="form-check-label col-md-12 my-2" for="check-4"><input class="form-check-input" id="check-4" value="Open Source Community"
+                        type="checkbox" />Open Source Community</label>
+                <label class="form-check-label col-md-12 my-2" for="check-3"><input class="form-check-input" id="check-3" value="Gitter help rooms"
+                            type="checkbox" />Gitter help rooms</label>
+                <label class="form-check-label col-md-12 my-2" for="check-4"><input class="form-check-input" id="check-4" value="Videos"
+                            type="checkbox" />Videos</label>
+                <label class="form-check-label col-md-12 my-2" for="check-4"><input class="form-check-input" id="check-4" value="City Meetups"
+                                type="checkbox" />City Meetups</label>
+                <label class="form-check-label col-md-12 my-2" for="check-4"><input class="form-check-input" id="check-4" value="Wiki"
+                                    type="checkbox" />Wiki</label>
+                <label class="form-check-label col-md-12 my-2" for="check-4"><input class="form-check-input" id="check-4" value="Forum"
+                                        type="checkbox" />Forum</label>
+                <label class="form-check-label col-md-12 my-2" for="check-4"><input class="form-check-input" id="check-4" value="Additional Courses"
+                                            type="checkbox" />Additional Courses</label>
+                    
             </div>
 
             <div class="form-group my-4">
-                <label class="mb-3" for="textarea">Any comments?</label>
-                <textarea name="" class="form-control" id="textarea" cols="30" rows="10"
+                <label class="mb-3" for="commments">Any comments or suggestions?</label>
+                <textarea required class="form-control" id="commments" cols="30" rows="10"
                     placeholder="Enter your comments here..."></textarea>
             </div>
 
