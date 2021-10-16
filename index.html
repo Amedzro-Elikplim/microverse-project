@@ -25,10 +25,19 @@
       <p class="text-center" id="description">
         Thank you for taking the time to help us improve the platform
       </p>
-      <form id="survey-form">
-          <input class="form-control" type="text" id="name" />
-          <input class="form-control" type="email" id="email">
-          <input class="form-control" id="number" type="number" pattern="[0-9]"/>
+      <form id="survey-form" class="col-md-6 mx-auto">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input class="form-control" type="text" id="name" />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input class="form-control" type="email" id="email">
+          </div>
+          <div class="form-group">
+              <label id="number-label" for="number">Age (optional)</label>
+            <input class="form-control" min="5" max="100" id="number" type="number" pattern="[0-9]"/>
+          </div>
       </form>
     </div>
     <script
